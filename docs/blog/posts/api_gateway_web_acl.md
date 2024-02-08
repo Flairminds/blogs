@@ -43,6 +43,17 @@ This document offers a brief yet insightful overview of two critical AWS service
    - Implement rate limiting rules to control requests per second for each API method.
    - Ensures optimal traffic management and prevents abuse.
 
+5. **Private Integrations with AWS ELB & AWS Cloud Map:**
+   - Route requests to private resources in your Virtual Private Cloud (VPC).
+   - Use HTTP APIs for building APIs for services behind private Application Load Balancers (ALBs), Network Load Balancers (NLBs), and IP-based services registered in AWS Cloud Map, such as ECS tasks.
+
+6. **API Keys for Third-Party Developers:**
+    - Manage the ecosystem of third-party developers accessing your APIs.
+    - Create API keys, set fine-grained access permissions, and distribute them to third-party developers.
+    - Define plans that set throttling and request quota limits for each individual API key.
+    - Optional use of API keys on a per-method level.
+
+
 *Cost:*
 
 - **Number of Requests (per month):**
