@@ -69,7 +69,7 @@ Many software development teams face challenges in optimizing their continuous i
 
 ### Step 2: Configuring Jenkins to create a master agent on ec2
 
-1. Connect to http://<your_server_public_or_private_address>:8080 from your browser. You will be able to access Jenkins through its management interface:![image](https://github.com/Flairminds/blogs/assets/135031436/4101ebd6-eefa-4c7c-824b-a487cefab52f)
+1. Connect to http://<your_server_public_or_private_address\>:8080 from your browser. You will be able to access Jenkins through its management interface:![image](https://github.com/Flairminds/blogs/assets/135031436/4101ebd6-eefa-4c7c-824b-a487cefab52f)
 2. As prompted, enter the password found in **/var/lib/jenkins/secrets/initialAdminPassword**.![image](https://github.com/Flairminds/blogs/assets/135031436/3635e206-f86a-4adf-aae0-84f8e4bd1732)
 3. Once the installation is complete, the **Create First Admin User** will open. Enter your information, and then select **Save and Continue**.![image](https://github.com/Flairminds/blogs/assets/135031436/62ff5a7c-e391-4ab1-8b95-5eae03a6d611)
 4. On the left-hand side, select **Manage Jenkins**, and then select **Manage Plugins**.
