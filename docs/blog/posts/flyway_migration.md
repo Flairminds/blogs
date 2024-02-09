@@ -95,8 +95,7 @@ docker run --rm -v "{absolute path to folder for SQLite db file}:/flyway/db" \
     redgate/flyway info
 ```
 
-Behold the revelation:
-
+output : 
 ```bash
 Database: jdbc:sqlite:/flyway/db/test_db.sqlite3 (SQLite 3.34)
 Schema version: 2
