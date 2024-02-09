@@ -29,12 +29,6 @@ Begin your Flyway journey by grabbing the Flyway Teams or Enterprise Docker imag
 docker pull redgate/flyway
 ```
 
-## Configuring Flyway
-Testing the waters is a breeze! Simply run the default image to get Flyway Command-line's usage instructions.
-
-```bash
-docker run --rm redgate/flyway
-```
 ## Setup
 
 ### Configuration (flyway.conf)
@@ -69,6 +63,14 @@ docker run --rm -v "{absolute path to folder for postgresql db file}:/flyway/db"
     -v "{absolute path to conf file folder}:/flyway/conf" \
     redgate/flyway migrate
 ```
+for example
+```bash
+docker run --rm -v "/home/ubuntu/dbfile:/flyway/db" \
+    -v "/home/ubuntu/sqlfile:/flyway/sql" \
+    -v "/home/ubuntu/flwayconf:/flyway/conf" \
+    redgate/flyway migrate
+```
+
 
 If the stars align, your terminal should gleefully declare:
 
