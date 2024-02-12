@@ -1,10 +1,10 @@
 ---
-title: Creating an AWS WAF IP Set and Associating it with an ALB
+title: Feature and Cost for API gateway and ALB with Web ACL
 date: 2024-01-11
 authors: [amanw]
-slug: Creating-an-AWS-WAF-IP-Set-and-Associating-it-with-an-ALB
+slug: Feature-and-Cost-for-API-gateway-and-ALB-with-Web-ACL
 description: >
-  Guide to Creating an AWS WAF IP Set and Associating it with an ALB
+  Feature and Cost for API gateway and ALB with Web ACL
 categories:
   - DevOps
 tags:
