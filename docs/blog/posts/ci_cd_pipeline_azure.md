@@ -41,12 +41,14 @@ mkdocs new .
 mkdocs build
 cd site
 ```
+![Screenshot_11](https://github.com/Flairminds/blogs/assets/152859626/0700ebcc-c0f7-446a-a932-36f985d5c89b)
 
 #### Step 3: Writing a Shell Script for Building and Storing Files
 In addition to the CMD script, we'll also create a shell script to further streamline the build process. This shell script will execute the necessary commands to build the project files and store them in the desired folder structure, preparing them for deployment to Azure Blob Storage.
 
 #### Step 4: Deploying to Azure Blob Storage with Azure CLI
 Once our project files are built and ready for deployment, we'll utilize Azure CLI to copy these files to Azure Blob Storage. By writing a custom Azure CLI script, we can automate the process of uploading the build artifacts to a specified Blob Storage container, making them accessible for hosting our static website.
+![Screenshot_12](https://github.com/Flairminds/blogs/assets/152859626/e480a017-0a45-447b-8cdb-186c5b4ce1d3)
 
 **Example Azure CLI script:**
 ```bash
@@ -56,6 +58,7 @@ az storage copy --source $(System.DefaultWorkingDirectory)/_Flairminds_blogs/sit
 
 #### Step 5: Configuring Azure Blob Storage Container
 Before deploying our website to Azure Blob Storage, we need to ensure that the Blob Storage container is properly configured to host a static website. This involves setting up access and permissions for the container, as well as configuring the necessary properties to enable static website hosting.
+![Screenshot_14](https://github.com/Flairminds/blogs/assets/152859626/cf7b1dce-a65a-4b95-b128-966a1177e911)
 
 #### Step 6: Triggering the Pipeline and Monitoring
 To complete our CI/CD pipeline setup, we'll configure triggers in Azure DevOps to automatically run the pipeline whenever changes are detected in the GitHub repository. Additionally, we'll set up monitoring to track the execution of our pipeline and troubleshoot any issues that may arise during the deployment process.
