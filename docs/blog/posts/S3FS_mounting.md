@@ -1,6 +1,24 @@
+---
+title: Mount S3 Bucket On Linux EC2 Instance using S3FS
+date: 2024-01-16
+authors: [akashv]
+slug: Mount S3 Bucket On Linux EC2 Instance using S3FS
+description: >
+  Guide to Mount S3 Bucket On Linux EC2 Instance using S3FS
+categories:
+  - DevOps
+tags:
+  - DevOps
+  - S3
+  - FSTAB
+  - S3FS
+---
+
 **Mount S3 Bucket On Linux EC2 Instance using S3FS**
 
 **Introduction**
+
+<!-- more -->
 
 S3fs is a FUSE file system that allows you to mount an Amazon S3 bucket as a local file system. It behaves like a network-attached drive, as it does not store anything on the Amazon EC2, but a user can access the data on S3 from the EC2 instance.
 
