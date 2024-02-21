@@ -2,7 +2,7 @@
 title: Mount S3 Bucket On Linux EC2 Instance using S3FS
 date: 2024-01-16
 authors: [akashv]
-slug: Mount S3 Bucket On Linux EC2 Instance using S3FS
+slug: Mount-S3-Bucket-On-Linux-EC2-Instance-using-S3FS
 description: >
   Guide to Mount S3 Bucket On Linux EC2 Instance using S3FS
 categories:
