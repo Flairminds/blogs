@@ -18,9 +18,10 @@ tags:
 
 **Introduction**
 
-<!-- more -->
 
 S3fs is a FUSE file system that allows you to mount an Amazon S3 bucket as a local file system. It behaves like a network-attached drive, as it does not store anything on the Amazon EC2, but a user can access the data on S3 from the EC2 instance.
+
+<!-- more -->
 
 **Prerequisites**
 
@@ -31,6 +32,7 @@ S3fs is a FUSE file system that allows you to mount an Amazon S3 bucket as a loc
 
 **Installation**
 
+Connect to your EC2 Instance and then run below cmd to install all required tools to work with S2FS.
 ```bash
 sudo yum update -y
 
