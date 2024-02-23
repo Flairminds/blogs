@@ -34,7 +34,7 @@ To find all filesystems that are mounted or free, you can use the `lsblk` comman
 ```bash
 lsblk
 ```
-![Material FSTAB lsblk][Material FSTAB lsblk vi_etc-fstab]
+![Material FSTAB lsblk][Material FSTAB lsblk]
 
 
 Additionally, you need to determine the type of filesystem, such as ext4, xfs, etc. To find the filesystem type, you can use either of the following commands:
@@ -58,6 +58,7 @@ Once you have gathered the necessary information, edit the FSTAB file using a te
 vim /etc/fstab
 ```
 ![Material FSTAB vi_etc-fstab][Material FSTAB vi_etc-fstab]
+
 Here's a typical line from an fstab file:
 
 ```bash
