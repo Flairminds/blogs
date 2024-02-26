@@ -9,6 +9,7 @@ categories:
   - DevOps
 tags:
   - DevOps
+  - S3
   - FSTAB
   - FSTAB-FILE
 ---
