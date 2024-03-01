@@ -1,3 +1,19 @@
+---
+title: Enable SASL/PLAIN Authentication in Apache Kafka
+date: 2024-01-16
+authors: [akashv]
+slug: Enable-SASL/PLAIN-Authentication-in-Apache-Kafka
+description: >
+  Guide to Enable SASL/PLAIN Authentication in Apache Kafka
+categories:
+  - DevOps
+tags:
+  - DevOps
+  - KAFKA
+  - KAFKA-AUTHENTICATION
+  - SASL/PLAIN
+---
+
 # How to Enable SASL/PLAIN Authentication in Apache Kafka
 
 This document outlines the steps required to enable SASL/PLAIN authentication in Apache Kafka, a popular distributed event streaming platform. SASL/PLAIN uses a simple username and password mechanism for authentication, which is suitable for environments where SSL/TLS is used to encrypt connections.
@@ -7,6 +23,8 @@ This document outlines the steps required to enable SASL/PLAIN authentication in
 - Apache Kafka installed and running
 - Basic knowledge of Kafka configuration and administration
 - Access to the Kafka and Zookeeper configuration files 
+
+<!-- more -->
 
 ### Step 1: Configure Kafka for SASL/PLAIN
 
