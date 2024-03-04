@@ -1,6 +1,6 @@
 ---
 title: Enable SASL/PLAIN Authentication in Apache Kafka
-date: 2024-01-16
+date: 2024-03-01
 authors: [akashv]
 slug: Enable-SASL/PLAIN-Authentication-in-Apache-Kafka
 description: >
