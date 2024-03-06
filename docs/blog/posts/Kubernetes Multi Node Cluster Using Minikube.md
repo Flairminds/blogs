@@ -1,3 +1,17 @@
+---
+title: kubernetes multi node cluster using minikube
+date: 2024-03-06
+authors: [swapnil]
+slug: kubernetes_multi_node_cluster_using_minikube
+description: >
+  Guide to create multi node cluster using minikube 
+  - DevOps
+tags:
+  - DevOps
+  - Minikube
+  - Kubernetes
+---
+
 **Introduction**
 
 A multi-node cluster in Kubernetes is a setup where several nodes collaborate to manage and run containerized applications. It consists of a master node, which controls the cluster, and multiple worker nodes responsible for executing application workloads. These clusters offer scalability, high availability, and efficient load balancing for running applications across distributed environments.
