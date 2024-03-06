@@ -98,9 +98,9 @@ Verifying that the Amazon CloudWatch Agent is working involves checking if it's 
 Monitoring CPU, memory, and disk utilization is essential for maintaining the performance and health of your AWS infrastructure. By leveraging AWS CloudWatch, you can easily collect, visualize, and analyze these metrics, enabling you to make informed decisions and ensure optimal resource utilization. Follow the steps outlined in this blog post to configure monitoring for your EC2 instances and start harnessing the power of CloudWatch today!
 
 ## References:
-AWS CloudWatch Documentation: https://docs.aws.amazon.com/cloudwatch/index.html
-AWS CloudWatch Agent Setup Guide: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-on-first-instance.html
-AWS CloudWatch Alarms Guide: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html
+- AWS CloudWatch Documentation: [https://docs.aws.amazon.com/cloudwatch/index.html](https://docs.aws.amazon.com/cloudwatch/index.html)
+- AWS CloudWatch Agent Setup Guide: [https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-on-first-instance.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/install-CloudWatch-Agent-on-first-instance.html)
+- AWS CloudWatch Alarms Guide: [https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/AlarmThatSendsEmail.html)
 
 
 
