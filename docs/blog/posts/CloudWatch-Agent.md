@@ -14,6 +14,10 @@ tags:
   - CloudWatch
 ---
 
+[Material Metrics  cloudwatch-Config]: cloudWatch-Agent/cloudwatch-Config.png
+[Material Metrics  cloudwatch-stoped]: cloudWatch-Agent/cloudwatch-stoped.png
+[Material Metrics  CWA-Status]: cloudWatch-Agent/CWA-Status.png
+
 # Steps To Monitor Memory Utilization of EC2 Instance with CloudWatch
 
 Monitoring system performance is crucial for maintaining optimal performance. Amazon Web Services (AWS) provides a powerful monitoring service called CloudWatch, which allows you to monitor various metrics of your EC2 instances, including CPU, memory, and disk utilization. In this blog post, we'll discuss how to set up monitoring for these metrics using CloudWatch.
@@ -104,6 +108,3 @@ Monitoring CPU, memory, and disk utilization is essential for maintaining the pe
 
 
 
-[Material Metrics  cloudwatch-Config]: cloudWatch-Agent/cloudwatch-Config.png
-[Material Metrics  cloudwatch-stoped]: cloudWatch-Agent/cloudwatch-stoped.png
-[Material Metrics  CWA-Status]: cloudWatch-Agent/CWA-Status.png
