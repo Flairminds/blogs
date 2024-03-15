@@ -14,9 +14,11 @@ tags:
   - CloudWatch
 ---
 
+
 [Material Metrics cloudwatch-Config]: cloudWatch-Agent/cloudwatch-Config.png
 [Material Metrics cloudwatch-stoped]: cloudWatch-Agent/cloudwatch-stoped.png
 [Material Metrics CWA-Status]: cloudWatch-Agent/CWA-Status.png
+
 
 # Steps To Monitor Memory Utilization of EC2 Instance with CloudWatch
 
