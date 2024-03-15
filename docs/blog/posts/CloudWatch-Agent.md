@@ -14,9 +14,9 @@ tags:
   - CloudWatch
 ---
 
-[Material Metrics  cloudwatch-Config]: cloudWatch-Agent/cloudwatch-Config.png
-[Material Metrics  cloudwatch-stoped]: cloudWatch-Agent/cloudwatch-stoped.png
-[Material Metrics  CWA-Status]: cloudWatch-Agent/CWA-Status.png
+[Material Metrics cloudwatch-Config]: cloudWatch-Agent/cloudwatch-Config.png
+[Material Metrics cloudwatch-stoped]: cloudWatch-Agent/cloudwatch-stoped.png
+[Material Metrics CWA-Status]: cloudWatch-Agent/CWA-Status.png
 
 # Steps To Monitor Memory Utilization of EC2 Instance with CloudWatch
 
@@ -41,7 +41,7 @@ After installing CloudWatch Agent, create `config.json` file at `/opt/aws/amazon
 
 Enter the below text in the `config.json` file.
 
-![Material Metrics  cloudwatch-Config][Material Metrics  cloudwatch-Config]
+![Material Metrics  cloudwatch-Config][Material Metrics cloudwatch-Config]
 
 ```json
 {
@@ -75,7 +75,7 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-c
 
 The above command output should be like below.
 
-![Material Metrics  cloudwatch-stoped][Material Metrics  cloudwatch-stoped]
+![Material Metrics  cloudwatch-stoped][Material Metrics cloudwatch-stoped]
 
 Then execute below command to run the CloudWatch Agent.
 
