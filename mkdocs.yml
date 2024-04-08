@@ -10,7 +10,7 @@ repo_url: https://github.com/Flairminds/blogs
 
 theme:
   name: material
-  custom_dir: material/overrides
+  custom_dir: overrides
   # palette:
   #   # Palette toggle for light mode
   #   - scheme: default
@@ -65,6 +65,8 @@ theme:
     - search.highlight
     - search.share
     - toc.follow
+
+edit_uri: edit/main/docs
 
 nav:
   - Blog:
