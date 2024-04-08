@@ -6,7 +6,7 @@ slug: aws-control-tower-setup-guide
 description: >
   Learn how to set up AWS Control Tower to manage your AWS environment effectively.
 categories:
-  - Cloud Computing
+  - AWS
 tags:
   - AWS
   - AWS Control Tower
