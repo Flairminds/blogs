@@ -1,7 +1,7 @@
 ---
 title: How to Host a Website on Azure Blob Storage A Simple Guide for You
 date: 2024-02-08
-authors: [ShreeyashS]
+authors: [shreeyashs]
 slug: hosting-website-azure-blob-storage-guide
 description: >
   Learn how to effortlessly host your static website on Azure Blob Storage with this step-by-step guide.

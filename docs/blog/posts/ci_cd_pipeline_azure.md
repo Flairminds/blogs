@@ -1,7 +1,7 @@
 ---
 title: Building a CI/CD Pipeline for Azure Blob Storage with GitHub and Azure CLI
 date: 2024-02-24
-authors: [ShreeyashS]
+authors: [shreeyashs]
 slug: Building-a-CI/CD-Pipeline-for-Azure-Blob-Storage-with-GitHub-and-Azure-CLI
 description: >
   Guide on setting up a CI/CD pipeline using GitHub, Azure DevOps, and Azure CLI for deploying static website files to Azure Blob Storage.
