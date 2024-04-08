@@ -1,4 +1,26 @@
+---
+title: AWS Control Tower Setup Guide
+date: 2024-04-04
+authors: [ShreeyashS]
+slug: aws-control-tower-setup-guide
+description: >
+  Learn how to set up AWS Control Tower to manage your AWS environment effectively.
+categories:
+  - Cloud Computing
+tags:
+  - AWS
+  - AWS Control Tower
+comments: true
+---
+
 # AWS Control Tower Setup Guide
+
+## Introduction:
+AWS Control Tower is a comprehensive service offered by Amazon Web Services (AWS) that facilitates the setup and management of a multi-account AWS environment. It provides centralized management capabilities, simplifying the implementation of security and compliance controls across your AWS accounts. By leveraging AWS Control Tower, organizations can achieve governance and scale in their cloud infrastructure deployments.
+
+In this guide, we will walk you through the process of setting up AWS Control Tower, creating a landing zone, and configuring organizational units (OUs) to structure your AWS accounts effectively. Whether you are managing a single AWS account or a complex multi-account environment, AWS Control Tower streamlines the administrative tasks and ensures adherence to organizational policies.
+
+<!-- more -->
 
 ## Prerequisite
 - **AWS Organizations**: Add an AWS account.

@@ -1,7 +1,26 @@
+---
+title: How to Host a Website on Azure Blob Storage: A Simple Guide for You
+date: 2024-02-08
+authors: [ShreeyashS]
+slug: hosting-website-azure-blob-storage-guide
+description: >
+  Learn how to effortlessly host your static website on Azure Blob Storage with this step-by-step guide.
+categories:
+  - Azure
+tags:
+  - Azure
+  - Azure Blob Storage
+  - Static Website
+  - Hosting
+comments: true
+---
+
 # How to Host a Website on Azure Blob Storage: A Simple Guide for You
 
 ## Introduction:
 So you've got a website and you're looking for a hassle-free way to host it without breaking the bank? Well, you're in luck! Azure Blob Storage offers a super easy and cost-effective solution for hosting static websites. This guide will walk you through the steps, making it a breeze.
+
+<!-- more -->
 
 ## Step 1: Setting Up Your Storage Account:
 1. Head over to the Azure portal (https://portal.azure.com) and log in.
