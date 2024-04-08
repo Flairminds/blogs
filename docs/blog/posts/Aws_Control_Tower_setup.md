@@ -1,7 +1,7 @@
 ---
 title: AWS Control Tower Setup Guide
 date: 2024-04-04
-authors: [ShreeyashS]
+authors: [shreeyashs]
 slug: aws-control-tower-setup-guide
 description: >
   Learn how to set up AWS Control Tower to manage your AWS environment effectively.
