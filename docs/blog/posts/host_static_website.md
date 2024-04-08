@@ -1,5 +1,5 @@
 ---
-title: How to Host a Website on Azure Blob Storage: A Simple Guide for You
+title: How to Host a Website on Azure Blob Storage A Simple Guide for You
 date: 2024-02-08
 authors: [ShreeyashS]
 slug: hosting-website-azure-blob-storage-guide
