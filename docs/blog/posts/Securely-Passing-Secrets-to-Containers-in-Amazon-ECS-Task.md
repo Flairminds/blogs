@@ -1,40 +1,36 @@
+---
+title: Securely Passing Secrets to Containers in Amazon ECS
+date: 2024-05-17
+authors: [Chhaya]
+slug: Securely-Passing-Secrets-to-Containers-in-Amazon-ECS
+description: >
+  Guide to securely passing secrets or sensitive information to containers in an Amazon ECS task using AWS Systems Manager Parameter Store and AWS Secrets Manager.
+categories:
+  - DevOps
+tags:
+  - DevOps
+  - AWS
+  - ECS
+  - Security
+---
+
 # Securely Passing Secrets to Containers in Amazon ECS
 
-This repository provides guidance and code snippets for securely passing secrets or sensitive information to containers in an Amazon ECS task. Passing sensitive data in plaintext can pose security risks, as it might be exposed in the AWS Management Console or through AWS APIs. As a best practice, use AWS Systems Manager Parameter Store or AWS Secrets Manager to securely inject data into containers as environment variables or in log configurations.
+## Overview
 
-## Table of Contents
+Passing sensitive data in plaintext can cause security issues, as it's discoverable in the AWS Management Console or through AWS APIs such as DescribeTaskDefinition or DescribeTasks. This guide provides a step-by-step approach to securely inject data into containers by referencing values stored in AWS Systems Manager Parameter Store or AWS Secrets Manager in the container definition of an Amazon ECS task definition.
 
-- [Short Description](#short-description)
-- [Prerequisites](#prerequisites)
-- [Store Sensitive Information](#store-sensitive-information)
-  - [Using AWS Systems Manager Parameter Store](#using-aws-systems-manager-parameter-store)
-  - [Using AWS Secrets Manager](#using-aws-secrets-manager)
-- [Create IAM Role and Policy](#create-iam-role-and-policy)
-  - [Create a Role with a Trust Relation](#create-a-role-with-a-trust-relation)
-  - [Create an Inline Policy](#create-an-inline-policy)
-  - [(Optional) Attach Managed Policy](#optional-attach-managed-policy)
-- [Reference Sensitive Information in ECS Task Definition](#reference-sensitive-information-in-ecs-task-definition)
-  - [Using AWS Management Console](#using-aws-management-console)
-  - [Using AWS CLI](#using-aws-cli)
-- [Force New Deployment](#force-new-deployment)
-  - [Using Amazon ECS Console](#using-amazon-ecs-console)
-  - [Using AWS CLI](#using-aws-cli)
-- [Example Code](#example-code)
-- [Conclusion](#conclusion)
-
-## Short Description
-
-Pass sensitive information to containers securely by referencing values stored in AWS Systems Manager Parameter Store or AWS Secrets Manager in the container definition of an Amazon ECS task definition. This can be done for:
-- Tasks using AWS Fargate platform version 1.3.0 or greater
-- Container instances using amazon-ecs-agent version 1.22.0 or greater
+<!-- more -->
 
 ## Prerequisites
 
-1. Store your sensitive information in AWS Systems Manager Parameter Store or Secrets Manager.
+Before passing secrets to your ECS containers, ensure you have stored your sensitive information in either AWS Systems Manager Parameter Store or AWS Secrets Manager.
 
 ## Store Sensitive Information
 
 ### Using AWS Systems Manager Parameter Store
+
+Run the following command, replacing `awsExampleParameter` with your parameter name and `awsExampleValue` with your secure value:
 
 ```sh
 aws ssm put-parameter --type SecureString --name awsExampleParameter --value awsExampleValue
@@ -42,15 +38,17 @@ aws ssm put-parameter --type SecureString --name awsExampleParameter --value aws
 
 ### Using AWS Secrets Manager
 
+Run the following command, replacing `awsExampleParameter` with your parameter name and `awsExampleValue` with your secret value:
+
 ```sh
 aws secretsmanager create-secret --name awsExampleParameter --secret-string awsExampleValue
 ```
 
-**Note:** Ensure that the task execution IAM role has permissions for `ssm:GetParameters`, `secretsmanager:GetSecretValue`, and `kms:Decrypt`.
+**Note:** Ensure the task execution IAM role has permissions for `ssm:GetParameters`, `secretsmanager:GetSecretValue`, and `kms:Decrypt`.
 
 ## Create IAM Role and Policy
 
-### Create a Role with a Trust Relation
+### Create a Role with a Trust Relationship
 
 1. Open the IAM console.
 2. Create a role with the following trust relationship for `ecs-tasks.amazonaws.com`:
@@ -161,7 +159,8 @@ Attach the managed policy `AmazonECSTaskExecutionRolePolicy` for tasks that use 
 ```sh
 aws ecs register-task-definition --family-name yourTaskDefinitionFamily --cli-input-json file://pathToYourJsonFile
 ```
-![image](https://github.com/chhayasingh0112/blogs/assets/72135131/d987a10c-7d37-4ba2-b179-55ecaa00dfb5)
+
+![image](https://github.com/chhayasingh0112/blogs/assets/72135131/240a3fca-09b1-4ac2-9b5d-34e81e0e544e)
 
 ## Force New Deployment
 
@@ -179,10 +178,6 @@ If secrets are updated or rotated, you must launch a new task to receive the upd
 aws ecs update-service --cluster yourClusterName --service yourServiceName --force-new-deployment
 ```
 
-## Example Code
-
-Refer to the code snippets provided in the [Store Sensitive Information](#store-sensitive-information), [Create IAM Role and Policy](#create-iam-role-and-policy), and [Reference Sensitive Information in ECS Task Definition](#reference-sensitive-information-in-ecs-task-definition) sections for implementation details.
-
 ## Conclusion
 
-Following these steps helps ensure that sensitive data is securely injected into your Amazon ECS containers, maintaining best practices for security and data integrity.
+By following these steps, you can securely pass sensitive data to your Amazon ECS containers, ensuring best practices for security and data integrity.
